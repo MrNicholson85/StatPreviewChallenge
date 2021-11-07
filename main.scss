@@ -1,0 +1,118 @@
+body {
+  background-color: #0a0c1b;
+  height: 100vh;
+  color: #cecce3;
+  padding: 66px 0;
+
+  @media (min-width: 1200px) {
+    padding: 318px 0;
+  }
+}
+
+.stats {
+  margin: auto;
+  border-radius: 10px;
+  background-color: #211741;
+  overflow: hidden;
+
+  &__image {
+    position: relative;
+    background-image: url('/images/image-header-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 326px;
+    overflow: hidden;
+
+    @media (min-width: 1200px) {
+      height: 400px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: rgba(200, 96, 243, 0.4);
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  &__wrapper {
+    padding: 62px 0 0;
+    font-size: 14px;
+
+    @media (min-width: 1200px) {
+      padding: 62px 62px 0;
+    }
+  }
+
+  &__headline {
+    font-size: 32px;
+    line-height: 39px;
+    font-family: inter;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 30px;
+
+    @media (min-width: 1200px) {
+      padding: 0 0;
+      line-height: 43px;
+      font-size: 38px;
+      text-align: left;
+    }
+
+    span {
+      color: #bc5ce6;
+    }
+  }
+
+  &__content {
+    line-height: 26px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    @media (min-width: 1200px) {
+      text-align: left;
+      padding-left: 0;
+      padding-right: 72px;
+    }
+  }
+
+  &__values {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 340px;
+      text-align: left;
+    }
+  }
+
+  &__values_item {
+    text-transform: uppercase;
+    margin-bottom: 34px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+
+    span {
+      display: block;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 70px;
+}
